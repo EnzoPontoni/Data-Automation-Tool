@@ -1,0 +1,28 @@
+{
+  "name": "garena-account-tool",
+  "version": "1.0.0",
+  "description": "Ferramenta para processar contas Garena - TXT para DAT com zip",
+  "main": "main.js",
+  "author": "App Itahlo 3",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder --win --x64"
+  },
+  "build": {
+    "appId": "com.garenaaccounttool.app",
+    "productName": "Garena Account Tool",
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "dependencies": {
+    "archiver": "^6.0.1",
+    "axios": "^1.13.6",
+    "form-data": "^4.0.5"
+  },
+  "devDependencies": {
+    "electron": "^28.1.0",
+    "electron-builder": "^26.8.1"
+  }
+}
